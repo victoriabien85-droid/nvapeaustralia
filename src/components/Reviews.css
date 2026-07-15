@@ -1,0 +1,21 @@
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.review-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  border-color: #00b67a;
+  box-shadow: 0 0 15px rgba(0, 182, 122, 0.15);
+}
+
+.star-rating { gap: 2px; }
+.trustpilot-badge { flex-wrap: wrap; gap: 1rem; }

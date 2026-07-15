@@ -1,0 +1,91 @@
+.cfm-faq-wrap.box-shadow-custom .box-shadow-2 {
+	box-shadow: 0 -4px 6px -4px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.cfm-accordion {
+	width: 100%;
+	overflow: hidden;
+}
+
+.cfm-accordion-header {
+	border-top: 1px solid #ddd;
+	padding: 12px 40px 12px 0;
+	font-size: 16px;
+	font-weight: 600;
+	color: #777;
+	line-height: 1.6;
+	cursor: pointer;
+	position: relative;
+}
+
+.cfm-accordion-header.active {
+	color: #000;
+}
+
+.cfm-accordion-item .cfm-accordion-header.active {
+	border-top-color: #000 !important;
+}
+
+.cfm-accordion-header .cfm-ico-arrow {
+	left: auto;
+	right: 0;
+	width: 40px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cfm-accordion-header .cfm-ico-arrow i {
+	font-size: 1.5rem;
+	line-height: 1.4;
+	transition: transform 0.3s ease;
+}
+
+.cfm-accordion-header.active .cfm-ico-arrow i {
+	transform: rotate(180deg);
+}
+
+.cfm-accordion-content {
+	display: none;
+	padding: 6px 20px;
+}
+
+.cfm-accordion-content p {
+	font-size: 15px;
+	color: #777;
+	line-height: 1.6;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+@media (min-width: 550px) {
+	.cfm-accordion-item:first-child .cfm-accordion-header {
+		border-top-color: transparent;
+	}
+}
+
+@media (max-width: 549px) {
+	.cfm-accordion-header {
+		font-size: 15px;
+		padding: 10px 35px 10px 5px;
+	}
+
+	.cfm-accordion-header .cfm-ico-arrow {
+		width: 35px;
+	}
+
+	.cfm-accordion-content {
+		padding: 2px 15px;
+	}
+
+	.cfm-accordion-content p {
+		font-size: 0.9rem;
+		line-height: 1.4;
+	}
+}

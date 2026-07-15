@@ -1,0 +1,57 @@
+.shipping-table-wrapper {
+  overflow-x: auto;
+}
+
+.shipping-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.shipping-table th {
+  padding: 1rem 1.5rem;
+  text-align: left;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  background-color: var(--bg-tertiary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.shipping-table td {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.9375rem;
+}
+
+.shipping-table tr:last-child td {
+  border-bottom: none;
+}
+
+.shipping-table tr.highlighted td {
+  background-color: rgba(196, 0, 0, 0.04);
+}
+
+.qty-badge {
+  font-weight: 700;
+  color: white;
+}
+
+.free-ship {
+  color: var(--success);
+  font-weight: 600;
+}
+
+.discount-badge {
+  background-color: rgba(196, 0, 0, 0.15);
+  color: var(--primary-accent);
+  border: 1px solid rgba(196, 0, 0, 0.3);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.875rem;
+}

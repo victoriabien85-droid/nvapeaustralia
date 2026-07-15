@@ -1,0 +1,119 @@
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 400px;
+  height: 100vh;
+  background-color: var(--bg-color);
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -5px 0 25px rgba(0, 0, 0, 0.5);
+  animation: slideInRight 0.3s ease;
+  border-left: 1px solid var(--border-color);
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.cart-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.cart-header h2 {
+  font-size: 1.5rem;
+}
+
+.cart-items {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.empty-cart {
+  height: 100%;
+}
+
+.cart-item {
+  background-color: var(--bg-secondary);
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+}
+
+.cart-item-img {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: var(--radius-sm);
+  padding: 0.5rem;
+}
+
+.cart-item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.qty-controls {
+  background-color: var(--bg-tertiary);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.qty-controls button {
+  padding: 0.5rem;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+.qty-controls button:hover {
+  background-color: var(--border-color);
+}
+
+.qty-controls span {
+  padding: 0 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.remove-btn {
+  color: var(--text-secondary);
+  transition: color 0.2s;
+}
+
+.remove-btn:hover {
+  color: var(--primary-accent);
+}
+
+.cart-footer {
+  padding: 1.5rem;
+  border-top: 1px solid var(--border-color);
+  background-color: var(--bg-secondary);
+}
+
+.cart-total {
+  margin-bottom: 0.5rem;
+}
+
+.w-full { width: 100%; }
+.mb-4 { margin-bottom: 1rem; }

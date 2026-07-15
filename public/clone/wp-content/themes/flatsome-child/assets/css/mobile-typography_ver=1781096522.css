@@ -1,0 +1,118 @@
+/**
+ * Mobile typography — homepage & product detail only.
+ * Does NOT touch: logged-in my-account, mini-cart, global buttons/body size.
+ * Breakpoint: Flatsome max-width 849px
+ */
+
+@media (max-width: 849px) {
+	/* ── Homepage ── */
+	body.home:not(.logged-in) p,
+	body.page-id-148:not(.logged-in) p {
+		line-height: 1.5;
+		margin-bottom: 0.85em;
+	}
+
+	body.home:not(.logged-in) .fqa-line-height,
+	body.page-id-148:not(.logged-in) .fqa-line-height {
+		font-size: 0.9375rem;
+		line-height: 1.5;
+		margin-bottom: 1rem;
+	}
+
+	body.home:not(.logged-in) .faq_piano .accordion-title,
+	body.page-id-148:not(.logged-in) .faq_piano .accordion-title {
+		line-height: 1.4;
+	}
+
+	body.home:not(.logged-in) .faq_piano .accordion-inner p,
+	body.page-id-148:not(.logged-in) .faq_piano .accordion-inner p {
+		line-height: 1.5;
+	}
+
+	body.home:not(.logged-in) .box-text .product-title a,
+	body.page-id-148:not(.logged-in) .box-text .product-title a {
+		line-height: 1.45;
+	}
+
+	body.home:not(.logged-in) .icon-box-text h3,
+	body.home:not(.logged-in) .icon-box-text .icon-box-title,
+	body.page-id-148:not(.logged-in) .icon-box-text h3,
+	body.page-id-148:not(.logged-in) .icon-box-text .icon-box-title {
+		font-size: 0.875rem;
+		line-height: 1.35;
+		font-weight: 600;
+	}
+
+	body.home:not(.logged-in) .icon-box-text p,
+	body.page-id-148:not(.logged-in) .icon-box-text p {
+		font-size: 0.8125rem;
+		line-height: 1.5;
+	}
+
+	body.home:not(.logged-in) .footer-widgets .ux-menu-link__link,
+	body.page-id-148:not(.logged-in) .footer-widgets .ux-menu-link__link {
+		font-size: 0.8125rem;
+		line-height: 1.6;
+	}
+
+	/* ── Product detail ── */
+	body.single-product:not(.logged-in) .woocommerce-breadcrumb.breadcrumbs,
+	body.single-product:not(.logged-in) .product-info .woocommerce-breadcrumb {
+		text-transform: none;
+		font-size: 0.6875rem;
+		line-height: 1.45;
+		opacity: 0.75;
+		letter-spacing: 0;
+	}
+
+	body.single-product:not(.logged-in) .product_title.entry-title {
+		font-size: 1.0625rem;
+		line-height: 1.35;
+		font-weight: 700;
+	}
+
+	body.single-product:not(.logged-in) .product-info .price,
+	body.single-product:not(.logged-in) .product-info .price .woocommerce-Price-amount {
+		font-size: 1rem;
+		line-height: 1.3;
+	}
+
+	body.single-product:not(.logged-in) table.variations td.label label,
+	body.single-product:not(.logged-in) table.variations th.label label {
+		font-size: 0.8125rem;
+		font-weight: 600;
+		line-height: 1.35;
+	}
+
+	body.single-product:not(.logged-in) .woocommerce-tabs ul.tabs li a,
+	body.single-product:not(.logged-in) .product-tabs .nav-tabs > li > a {
+		font-size: 0.8125rem;
+		text-transform: none;
+		letter-spacing: 0;
+		line-height: 1.35;
+	}
+
+	body.single-product:not(.logged-in) .woocommerce-product-details__short-description,
+	body.single-product:not(.logged-in) .woocommerce-tabs .panel,
+	body.single-product:not(.logged-in) .product-tabs .tab-panels .panel {
+		font-size: 0.875rem;
+		line-height: 1.55;
+	}
+
+	body.single-product:not(.logged-in) .woocommerce-product-rating,
+	body.single-product:not(.logged-in) .stock {
+		font-size: 0.8125rem;
+		line-height: 1.4;
+	}
+}
+
+@media (max-width: 549px) {
+	body.single-product:not(.logged-in) .product_title.entry-title {
+		font-size: 1rem;
+	}
+
+	body.home:not(.logged-in) .fqa-line-height,
+	body.page-id-148:not(.logged-in) .fqa-line-height {
+		font-size: 0.875rem;
+	}
+}

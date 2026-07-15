@@ -1,0 +1,1977 @@
+/* My Account — full-width, mobile-first */
+
+.cnvapes-my-account-page .page-wrapper.my-account {
+	padding-top: 0;
+}
+
+.cnvapes-my-account-page .my-account-header {
+	margin-bottom: 0;
+}
+
+.cnvapes-account-shell {
+	margin-top: 0;
+}
+
+.cnvapes-account-top {
+	margin-bottom: 1.25rem;
+	background: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.07);
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+/* User bar */
+.cnvapes-account-user {
+	display: flex;
+	align-items: center;
+	gap: 0.85rem;
+	padding: 1rem 1rem 0.85rem;
+	background: linear-gradient(135deg, rgba(var(--fs-color-primary-rgb, 68, 96, 132), 0.08) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.cnvapes-account-user__avatar img {
+	border-radius: 50%;
+	width: 52px;
+	height: 52px;
+	object-fit: cover;
+	border: 2px solid #fff;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.cnvapes-account-user__info {
+	flex: 1;
+	min-width: 0;
+}
+
+.cnvapes-account-user__name {
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.3;
+}
+
+.cnvapes-account-user__meta {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.35rem;
+	margin: 0.15rem 0 0;
+	font-size: 0.78rem;
+	color: rgba(0, 0, 0, 0.55);
+}
+
+.cnvapes-account-user__meta-sep {
+	opacity: 0.45;
+}
+
+.cnvapes-account-user__logout {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.18rem 0.55rem;
+	font-size: 0.72rem;
+	font-weight: 600;
+	line-height: 1.2;
+	color: rgba(0, 0, 0, 0.72);
+	text-decoration: none;
+	background: rgba(255, 255, 255, 0.92);
+	border: 1px solid rgba(0, 0, 0, 0.14);
+	border-radius: 999px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+	transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cnvapes-account-user__logout:hover,
+.cnvapes-account-user__logout:focus-visible {
+	color: #b71c1c;
+	background: rgba(198, 40, 40, 0.08);
+	border-color: rgba(198, 40, 40, 0.3);
+	box-shadow: 0 1px 3px rgba(198, 40, 40, 0.12);
+	text-decoration: none;
+}
+
+.cnvapes-account-user__actions {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	flex-shrink: 0;
+	margin-left: auto;
+}
+
+.cnvapes-account-user__agent {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	flex-shrink: 0;
+	max-width: min(100%, 11.5rem);
+	padding: 0.4rem 0.65rem 0.4rem 0.5rem;
+	border-radius: 10px;
+	background: linear-gradient(135deg, rgba(var(--fs-color-primary-rgb, 68, 96, 132), 0.07) 0%, rgba(255, 255, 255, 0.96) 72%);
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.cnvapes-account-user__agent--wa {
+	background: linear-gradient(135deg, rgba(37, 211, 102, 0.1) 0%, rgba(255, 255, 255, 0.98) 72%);
+	border-color: rgba(37, 211, 102, 0.22);
+}
+
+.cnvapes-account-user__agent-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 1.65rem;
+	height: 1.65rem;
+	border-radius: 50%;
+	color: var(--fs-color-primary, #446084);
+	background: rgba(255, 255, 255, 0.88);
+	border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.cnvapes-account-user__agent--wa .cnvapes-account-user__agent-icon {
+	color: #1fa855;
+	background: rgba(37, 211, 102, 0.12);
+	border-color: rgba(37, 211, 102, 0.18);
+}
+
+.cnvapes-account-user__agent-body {
+	display: flex;
+	flex-direction: column;
+	gap: 0.08rem;
+	min-width: 0;
+	line-height: 1.2;
+}
+
+.cnvapes-account-user__agent-label {
+	font-size: 0.58rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: rgba(0, 0, 0, 0.48);
+	white-space: nowrap;
+}
+
+.cnvapes-account-user__agent-name {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35rem;
+	font-size: 0.76rem;
+	font-weight: 700;
+	color: rgba(0, 0, 0, 0.82);
+	text-decoration: none;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%;
+}
+
+.cnvapes-account-user__agent-name--wa {
+	color: #157a4c;
+	transition: color 0.2s ease;
+}
+
+.cnvapes-account-user__agent-name--wa:hover,
+.cnvapes-account-user__agent-name--wa:focus-visible {
+	color: #0d5c38;
+}
+
+.cnvapes-account-user__agent-hint {
+	display: inline-block;
+	flex-shrink: 0;
+	padding: 0.1rem 0.38rem;
+	font-size: 0.56rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	color: #fff;
+	background: #25d366;
+	border-radius: 999px;
+	line-height: 1.35;
+}
+
+/* Horizontal tabs */
+.cnvapes-account-nav-horizontal {
+	position: sticky;
+	top: var(--cnvapes-account-sticky-top, 70px);
+	z-index: 20;
+	background: #fff;
+	border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.cnvapes-account-tabs {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 0.45rem;
+	list-style: none;
+	margin: 0;
+	padding: 0.65rem 0.85rem;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	scrollbar-width: none;
+}
+
+.cnvapes-account-tabs::-webkit-scrollbar {
+	display: none;
+}
+
+.cnvapes-account-tabs__link {
+	display: block;
+	white-space: nowrap;
+	padding: 0.55rem 0.95rem;
+	border-radius: 8px;
+	font-size: 0.75rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+	color: rgba(0, 0, 0, 0.72);
+	background: rgba(0, 0, 0, 0.04);
+	text-decoration: none;
+	transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cnvapes-account-tabs__item.is-active .cnvapes-account-tabs__link,
+.cnvapes-account-tabs__link[aria-current="page"] {
+	background: var(--fs-color-primary, #446084);
+	color: #fff;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.cnvapes-account-content,
+.cnvapes-MyAccount-content {
+	padding: 0;
+}
+
+.cnvapes-my-account-page .box.box-plain {
+	border: 1px solid rgba(0, 0, 0, 0.07);
+	border-radius: 12px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+	background: #fff;
+}
+
+/* Dashboard */
+.cnvapes-dashboard {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.cnvapes-dashboard__welcome {
+	padding: 1.15rem 1.1rem;
+}
+
+.cnvapes-dashboard__greeting {
+	font-size: 1.05rem;
+	margin-bottom: 0.3rem;
+}
+
+.cnvapes-dashboard__meta {
+	font-size: 0.82rem;
+	margin: 0;
+	opacity: 0.7;
+}
+
+.cnvapes-dashboard__stats {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0.65rem;
+}
+
+.cnvapes-stat-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.25rem;
+	min-height: 88px;
+	padding: 1rem 0.75rem;
+	text-align: center;
+	text-decoration: none;
+	color: inherit;
+	border: 1px solid rgba(0, 0, 0, 0.07);
+	border-radius: 12px;
+	background: #fff;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+	transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cnvapes-stat-card:active {
+	transform: scale(0.98);
+}
+
+.cnvapes-stat-card__value {
+	font-size: 1.65rem;
+	font-weight: 800;
+	line-height: 1.1;
+	color: var(--fs-color-primary, #446084);
+}
+
+.cnvapes-stat-card__label {
+	font-size: 0.72rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	opacity: 0.75;
+}
+
+.cnvapes-stat-card__worth {
+	font-size: 0.72rem;
+	font-weight: 600;
+	line-height: 1.3;
+	opacity: 0.8;
+	color: var(--fs-color-secondary, #c40000);
+}
+
+.cnvapes-dashboard__refer-desc .cnvapes-refer-worth {
+	font-weight: 700;
+	color: rgba(0, 0, 0, 0.78);
+}
+
+.cnvapes-dashboard__refer {
+	padding: 1.1rem;
+}
+
+.cnvapes-dashboard__refer-desc {
+	font-size: 0.86rem;
+	margin: 0.35rem 0 0.85rem;
+	line-height: 1.55;
+	color: rgba(0, 0, 0, 0.62);
+}
+
+.cnvapes-dashboard__refer-desc .cnvapes-refer-points {
+	font-weight: 700;
+	color: rgba(0, 0, 0, 0.78);
+}
+
+.cnvapes-referral-copy {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	gap: 0;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	border-radius: 10px;
+	overflow: hidden;
+	background: #fff;
+	box-shadow: none;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cnvapes-referral-copy:focus-within {
+	border-color: rgba(var(--fs-color-primary-rgb, 68, 96, 132), 0.45);
+	box-shadow: 0 0 0 3px rgba(var(--fs-color-primary-rgb, 68, 96, 132), 0.1);
+}
+
+.cnvapes-my-account-page .cnvapes-referral-copy__input,
+.cnvapes-my-account-page .cnvapes-referral-copy__input:focus,
+.cnvapes-my-account-page .cnvapes-referral-copy__input[readonly] {
+	flex: 1;
+	min-width: 0;
+	width: auto;
+	margin: 0 !important;
+	padding: 0.62rem 0.75rem;
+	font-size: 0.8rem;
+	line-height: 1.35;
+	border: 0 !important;
+	border-radius: 0 !important;
+	background: transparent !important;
+	box-shadow: none !important;
+	outline: none !important;
+	-webkit-appearance: none;
+	appearance: none;
+	color: rgba(0, 0, 0, 0.72);
+	text-overflow: ellipsis;
+}
+
+.cnvapes-referral-copy__btn {
+	margin: 0 !important;
+	width: auto !important;
+	flex-shrink: 0;
+	align-self: stretch;
+	white-space: nowrap;
+	padding: 0.62rem 1rem !important;
+	font-size: 0.78rem !important;
+	font-weight: 600;
+	line-height: 1.35;
+	min-height: 42px;
+	border: 0 !important;
+	border-left: 1px solid rgba(0, 0, 0, 0.1) !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+}
+
+.cnvapes-referral-copy__tip {
+	margin: 0.5rem 0 0;
+	font-size: 0.8rem;
+	font-weight: 600;
+	color: #2e7d32;
+}
+
+.cnvapes-my-account-page .dashboard-links {
+	display: none !important;
+}
+
+.cnvapes-dashboard__orders {
+	padding: 1.1rem;
+}
+
+.cnvapes-dashboard__section-head {
+	gap: 0.5rem;
+	margin-bottom: 0.75rem;
+}
+
+.cnvapes-dashboard__section-head .cnvapes-dashboard__section-title {
+	flex: 1;
+	min-width: 0;
+}
+
+.cnvapes-dashboard__section-title {
+	margin: 0;
+	font-size: 0.88rem;
+	letter-spacing: 0.04em;
+}
+
+.cnvapes-dashboard__view-all {
+	flex-shrink: 0;
+	white-space: nowrap;
+	margin-right: 0.5rem;
+	font-size: 0.78rem;
+	font-weight: 600;
+	text-decoration: none;
+	color: var(--fs-color-primary, #446084);
+}
+
+.cnvapes-dashboard__empty {
+	margin-bottom: 0.85rem;
+	font-size: 0.9rem;
+}
+
+/* Order cards */
+.cnvapes-order-cards {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.cnvapes-order-card {
+	border: 1px solid rgba(0, 0, 0, 0.07);
+	border-radius: 12px;
+	padding: 1rem;
+	margin-bottom: 0.65rem;
+	background: #fff;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.cnvapes-order-card:last-child {
+	margin-bottom: 0;
+}
+
+.cnvapes-order-cards--compact .cnvapes-order-card {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-template-rows: auto auto;
+	gap: 0.35rem 0.75rem;
+	align-items: center;
+	padding: 0.9rem 1rem;
+}
+
+.cnvapes-order-cards--compact .cnvapes-order-card__main {
+	grid-column: 1;
+	grid-row: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.15rem;
+	min-width: 0;
+}
+
+.cnvapes-order-cards--compact .cnvapes-order-card__aside {
+	grid-column: 2;
+	grid-row: 1 / span 2;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	gap: 0.35rem;
+	text-align: right;
+	min-width: 0;
+}
+
+.cnvapes-order-cards--compact .cnvapes-order-card__date {
+	text-align: left;
+	white-space: normal;
+	margin-top: 0;
+}
+
+.cnvapes-order-cards--compact .cnvapes-order-card__total {
+	font-size: 0.86rem;
+	font-weight: 600;
+	line-height: 1.3;
+}
+
+.cnvapes-order-cards--compact .cnvapes-order-card__total .awdr-you-saved-text {
+	display: none;
+}
+
+.cnvapes-order-card__row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.65rem;
+}
+
+.cnvapes-order-card__row + .cnvapes-order-card__row {
+	margin-top: 0.4rem;
+}
+
+.cnvapes-order-card__row--amounts {
+	margin-bottom: 0.15rem;
+}
+
+.cnvapes-order-card__number {
+	font-weight: 700;
+	font-size: 0.95rem;
+	text-decoration: none;
+	color: inherit;
+	min-width: 0;
+}
+
+.cnvapes-order-card__date,
+.cnvapes-order-card__qty {
+	font-size: 0.78rem;
+	opacity: 0.65;
+	line-height: 1.35;
+}
+
+.cnvapes-order-card__row--meta .cnvapes-order-card__date {
+	text-align: right;
+	white-space: nowrap;
+}
+
+.cnvapes-order-card__qty {
+	min-width: 0;
+}
+
+.cnvapes-order-card__discount {
+	font-size: 0.86rem;
+	font-weight: 600;
+	text-align: right;
+	color: var(--fs-color-secondary, #c40000);
+	white-space: nowrap;
+}
+
+.cnvapes-order-card__discount:empty,
+.cnvapes-order-card__row--amounts .cnvapes-order-card__discount {
+	opacity: 0.85;
+}
+
+.cnvapes-order-status {
+	display: inline-block;
+	font-size: 0.68rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	padding: 0.28rem 0.6rem;
+	border-radius: 6px;
+	background: rgba(0, 0, 0, 0.06);
+	white-space: nowrap;
+}
+
+.cnvapes-order-card--status-completed .cnvapes-order-status,
+.cnvapes-order-status--completed {
+	background: rgba(56, 142, 60, 0.12);
+	color: #2e7d32;
+}
+
+.cnvapes-order-card--status-processing .cnvapes-order-status,
+.cnvapes-order-status--processing {
+	background: rgba(25, 118, 210, 0.12);
+	color: #1565c0;
+}
+
+.cnvapes-order-card--status-on-hold .cnvapes-order-status,
+.cnvapes-order-status--on-hold {
+	background: rgba(245, 124, 0, 0.12);
+	color: #ef6c00;
+}
+
+.cnvapes-order-card--status-cancelled .cnvapes-order-status,
+.cnvapes-order-card--status-failed .cnvapes-order-status,
+.cnvapes-order-status--cancelled,
+.cnvapes-order-status--failed {
+	background: rgba(198, 40, 40, 0.12);
+	color: #c62828;
+}
+
+.cnvapes-order-card__total {
+	font-weight: 600;
+	font-size: 0.88rem;
+	min-width: 0;
+}
+
+.cnvapes-order-cards .cnvapes-order-card__total .awdr-you-saved-text {
+	display: block;
+	margin-top: 0.2rem;
+	font-size: 0.72rem;
+	font-weight: 500;
+	line-height: 1.35;
+}
+
+.cnvapes-order-card__actions {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.7rem;
+	margin-top: 0.15rem;
+	padding-top: 0.6rem;
+	border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.cnvapes-order-card__actions .button {
+	margin: 0 !important;
+	font-size: 0.72rem;
+	font-weight: 600;
+	line-height: 1.3;
+	padding: 0.4rem 0.75rem;
+	min-height: 0;
+	border-radius: 6px;
+	white-space: nowrap;
+}
+
+.cnvapes-orders-pagination {
+	margin-top: 1rem;
+	display: flex;
+	gap: 0.5rem;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cnvapes-orders-pagination .button {
+	margin: 0 !important;
+	font-size: 0.72rem;
+	font-weight: 600;
+	padding: 0.45rem 0.85rem;
+	min-height: 0;
+	border-radius: 6px;
+}
+
+.cnvapes-orders-empty {
+	padding: 2rem 1.25rem;
+	text-align: center;
+}
+
+/* Order detail */
+.cnvapes-order-detail {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.cnvapes-order-detail__header {
+	padding: 1.1rem;
+}
+
+.cnvapes-order-detail__title-row {
+	gap: 0.75rem;
+	flex-wrap: wrap;
+}
+
+.cnvapes-order-detail__title {
+	margin: 0;
+	font-size: 1.1rem;
+}
+
+.cnvapes-order-detail__meta {
+	margin: 0.4rem 0 0;
+	font-size: 0.82rem;
+}
+
+.cnvapes-order-detail__updates {
+	border: 1px solid rgba(0, 0, 0, 0.07);
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.cnvapes-order-detail__updates {
+	padding: 1.1rem;
+	background: #fff;
+}
+
+.cnvapes-order-detail__section-title {
+	margin: 0 0 0.75rem;
+	font-size: 0.85rem;
+	letter-spacing: 0.04em;
+}
+
+.cnvapes-order-update {
+	margin-bottom: 0.75rem;
+	padding-bottom: 0.75rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.cnvapes-order-update:last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+
+.cnvapes-order-update__date {
+	font-size: 0.78rem;
+	margin-bottom: 0.35rem;
+	opacity: 0.65;
+}
+
+/* Shared account panels */
+.cnvapes-account-panel {
+	padding: 1.1rem;
+	border: 1px solid rgba(0, 0, 0, 0.07);
+	border-radius: 12px;
+	background: #fff;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.cnvapes-account-panel__title {
+	margin: 0 0 1rem;
+	font-size: 0.88rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+.cnvapes-account-panel__desc {
+	margin: 0 0 1rem;
+	font-size: 0.86rem;
+	line-height: 1.5;
+	opacity: 0.72;
+}
+
+/* Address cards */
+.cnvapes-address-cards {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.75rem;
+}
+
+.cnvapes-address-cards--dual {
+	grid-template-columns: 1fr;
+}
+
+.cnvapes-address-card {
+	padding: 0 !important;
+	overflow: hidden;
+}
+
+.cnvapes-address-card__head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.75rem;
+	padding: 0.9rem 1rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+	background: rgba(0, 0, 0, 0.02);
+}
+
+.cnvapes-address-card__title {
+	margin: 0 !important;
+	font-size: 0.82rem !important;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+.cnvapes-address-card__edit {
+	flex-shrink: 0;
+	font-size: 0.74rem;
+	font-weight: 600;
+	text-decoration: none;
+	padding: 0.35rem 0.7rem;
+	border-radius: 6px;
+	background: var(--fs-color-primary, #446084);
+	color: #fff !important;
+}
+
+.cnvapes-address-card__body {
+	padding: 1rem;
+}
+
+.cnvapes-address-card__body address {
+	font-style: normal;
+	font-size: 0.88rem;
+	line-height: 1.65;
+	margin: 0;
+}
+
+.cnvapes-address-card__contact {
+	margin: 0.5rem 0 0;
+	font-size: 0.84rem;
+	opacity: 0.8;
+}
+
+.cnvapes-address-card__empty {
+	display: block;
+	font-size: 0.86rem;
+	opacity: 0.6;
+}
+
+/* Account forms */
+.cnvapes-account-form .cnvapes-account-form__inner {
+	margin: 0;
+}
+
+.cnvapes-form-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0;
+}
+
+.cnvapes-form-grid .form-row {
+	margin-bottom: 0.85rem !important;
+	padding: 0;
+}
+
+.cnvapes-form-grid label {
+	display: block;
+	margin-bottom: 0.35rem;
+	font-size: 0.78rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+	opacity: 0.8;
+}
+
+.cnvapes-form-grid .input-text,
+.cnvapes-form-grid select,
+.cnvapes-form-grid textarea {
+	width: 100%;
+	margin: 0;
+	padding: 0.65rem 0.75rem;
+	font-size: 0.9rem;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	border-radius: 8px;
+	background: #fff;
+	box-shadow: none;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cnvapes-form-grid .input-text:focus,
+.cnvapes-form-grid select:focus,
+.cnvapes-form-grid textarea:focus {
+	border-color: var(--fs-color-primary, #446084);
+	box-shadow: 0 0 0 3px rgba(var(--fs-color-primary-rgb, 68, 96, 132), 0.12);
+	outline: none;
+}
+
+.cnvapes-field-hint {
+	display: block;
+	margin-top: 0.35rem;
+	font-size: 0.78rem;
+	opacity: 0.65;
+	line-height: 1.4;
+}
+
+.cnvapes-form-fieldset {
+	margin: 1.25rem 0 0;
+	padding: 1rem 1rem 0.25rem;
+	border: 1px solid rgba(0, 0, 0, 0.07);
+	border-radius: 12px;
+	background: #fff;
+	color: inherit;
+}
+
+.cnvapes-form-fieldset legend {
+	padding: 0 0.35rem;
+	margin-bottom: 0.35rem;
+	font-size: 0.85rem;
+	font-weight: 700;
+	text-transform: none;
+	letter-spacing: 0.02em;
+	color: inherit;
+	opacity: 1;
+}
+
+.cnvapes-form-fieldset .cnvapes-form-grid label {
+	font-size: 0.76rem;
+	font-weight: 600;
+	text-transform: none;
+	letter-spacing: 0.01em;
+	opacity: 0.82;
+	color: inherit;
+}
+
+.cnvapes-form-fieldset .cnvapes-form-grid .input-text,
+.cnvapes-form-fieldset .cnvapes-form-grid select,
+.cnvapes-form-fieldset .cnvapes-form-grid textarea {
+	font-size: 0.875rem;
+	padding: 0.6rem 0.7rem;
+	border-color: rgba(0, 0, 0, 0.1);
+	background: #fff;
+	color: inherit;
+}
+
+.cnvapes-form-fieldset .cnvapes-form-grid .form-row {
+	margin-bottom: 0.75rem !important;
+}
+
+.cnvapes-form-actions {
+	margin: 1.25rem 0 0 !important;
+}
+
+.cnvapes-form-actions .button {
+	margin: 0 !important;
+	width: 100%;
+	padding: 0.75rem 1.25rem !important;
+	border-radius: 8px !important;
+	font-weight: 600;
+}
+
+/* Order detail — items table */
+.cnvapes-order-panel {
+	padding: 1.1rem;
+	margin-bottom: 0;
+}
+
+.cnvapes-order-detail__content .woocommerce-order-details + .woocommerce-customer-details {
+	margin-top: 0.75rem;
+}
+
+.cnvapes-order-items-table {
+	margin: 0 !important;
+	border: 0 !important;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+.cnvapes-order-items-table thead th {
+	padding: 0.65rem 0.75rem;
+	font-size: 0.72rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	background: rgba(0, 0, 0, 0.03);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.cnvapes-order-items-table tbody td {
+	padding: 0.85rem 0.75rem;
+	font-size: 0.88rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+	vertical-align: top;
+}
+
+.cnvapes-order-items-table tbody tr:last-child td {
+	border-bottom: 0;
+}
+
+.cnvapes-order-items-table .product-name a {
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.cnvapes-order-items-table .product-quantity {
+	font-weight: 400;
+	opacity: 0.7;
+	font-size: 0.82rem;
+}
+
+.cnvapes-order-items-table tfoot th,
+.cnvapes-order-items-table tfoot td {
+	padding: 0.55rem 0.75rem;
+	font-size: 0.84rem;
+	border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.cnvapes-order-items-table tfoot.cnvapes-order-totals tr:last-child th,
+.cnvapes-order-items-table tfoot.cnvapes-order-totals tr:last-child td {
+	font-weight: 700;
+	font-size: 0.92rem;
+	padding-top: 0.75rem;
+	border-top: 2px solid rgba(0, 0, 0, 0.08);
+}
+
+.cnvapes-order-actions-cell {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 0.7rem;
+}
+
+.cnvapes-order-actions-cell .button,
+.cnvapes-order-actions-cell .woocommerce-button {
+	margin: 0 !important;
+	font-size: 0.74rem;
+	font-weight: 600;
+	line-height: 1.3;
+	padding: 0.42rem 0.78rem;
+	min-height: 0;
+	border-radius: 6px;
+	white-space: nowrap;
+}
+
+.cnvapes-order-detail__updates .cnvapes-order-updates {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.cnvapes-order-addresses {
+	margin-top: 0.75rem;
+}
+
+/* Account page stack (details + addresses) */
+.cnvapes-account-stack {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.cnvapes-account-addresses-section .cnvapes-account-panel__title {
+	margin-bottom: 0.35rem;
+}
+
+/* YITH Points page */
+.cnvapes-my-account-page .ywpar-wrapper > h2 {
+	display: none;
+}
+
+.cnvapes-my-account-page .ywpar_myaccount_entry_info {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0.65rem;
+	margin-bottom: 1rem;
+}
+
+.cnvapes-my-account-page .ywpar_myaccount_entry_info > div {
+	min-width: 0;
+	margin: 0 !important;
+	padding: 0.85rem 0.65rem !important;
+	background: #fff !important;
+	border: 1px solid rgba(0, 0, 0, 0.07);
+	border-radius: 12px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+	text-align: center;
+}
+
+/* Summary + rank always side-by-side; level badge full width below */
+.cnvapes-my-account-page .ywpar_summary_badge {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.cnvapes-my-account-page .ywpar_rank_badges {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+.cnvapes-my-account-page .ywpar_levels_badges {
+	grid-column: 1 / -1;
+	grid-row: 2;
+}
+
+.cnvapes-my-account-page .ywpar_entry_info_title {
+	font-size: 0.72rem !important;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	opacity: 0.75;
+	margin-bottom: 0.35rem;
+}
+
+.cnvapes-my-account-page .points_collected {
+	font-size: 1.65rem !important;
+	font-weight: 800 !important;
+	line-height: 1.1 !important;
+	color: var(--fs-color-primary, #446084);
+}
+
+.cnvapes-my-account-page .points_worth,
+.cnvapes-my-account-page .ywpar_to_redeem_title,
+.cnvapes-my-account-page .ywpar_total_collected_title {
+	font-size: 0.76rem !important;
+	opacity: 0.7;
+}
+
+.cnvapes-my-account-page .ywpar_myaccount_entry_info .rank {
+	font-size: 1.65rem !important;
+	font-weight: 800;
+	padding: 0.5rem 0 !important;
+	color: var(--fs-color-primary, #446084);
+}
+
+.cnvapes-my-account-page #ywpar_tabs {
+	border: 1px solid rgba(0, 0, 0, 0.07);
+	border-radius: 12px;
+	background: #fff;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+	overflow: hidden;
+}
+
+.cnvapes-my-account-page .ywpar_tabs_header {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+	background: rgba(0, 0, 0, 0.02);
+}
+
+.cnvapes-my-account-page .ywpar_tabs_header ul[role="tablist"] {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 0.45rem;
+	list-style: none;
+	margin: 0;
+	padding: 0.65rem 0.85rem;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	scrollbar-width: none;
+}
+
+.cnvapes-my-account-page .ywpar_tabs_header ul[role="tablist"]::-webkit-scrollbar {
+	display: none;
+}
+
+.cnvapes-my-account-page .ywpar_tabs_links {
+	flex-shrink: 0;
+	margin: 0 !important;
+	padding: 0.55rem 0.95rem !important;
+	border-radius: 8px !important;
+	font-size: 0.72rem !important;
+	font-weight: 600 !important;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+	color: rgba(0, 0, 0, 0.72) !important;
+	background: rgba(0, 0, 0, 0.04) !important;
+	box-shadow: none !important;
+	cursor: pointer;
+	transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+	white-space: nowrap;
+	list-style: none;
+}
+
+/* Only .active — aria-selected is static in YITH HTML and must not drive styles */
+.cnvapes-my-account-page .ywpar_tabs_links.active {
+	background: var(--fs-color-primary, #446084) !important;
+	color: #fff !important;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12) !important;
+}
+
+.cnvapes-my-account-page .ywpar_tabcontent {
+	display: none;
+	padding: 1rem;
+}
+
+.cnvapes-my-account-page .ywpar_tabcontent.active {
+	display: block;
+}
+
+.cnvapes-my-account-page .ywpar_tabs_content_container {
+	padding: 0;
+}
+
+/* Points history table */
+.cnvapes-my-account-page .ywpar_points_rewards {
+	width: 100%;
+	border: 0 !important;
+	margin: 0 !important;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+.cnvapes-my-account-page .ywpar_points_rewards thead th {
+	padding: 0.7rem 0.65rem;
+	font-size: 0.68rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	background: rgba(0, 0, 0, 0.03);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	white-space: nowrap;
+}
+
+.cnvapes-my-account-page .ywpar_points_rewards tbody tr.ywpar-item {
+	transition: background 0.15s ease;
+}
+
+.cnvapes-my-account-page .ywpar_points_rewards tbody tr.ywpar-item:hover {
+	background: rgba(0, 0, 0, 0.015);
+}
+
+.cnvapes-my-account-page .ywpar_points_rewards tbody td {
+	padding: 0.8rem 0.65rem;
+	font-size: 0.84rem;
+	line-height: 1.45;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+	vertical-align: middle;
+}
+
+.cnvapes-my-account-page .ywpar_points_rewards tbody tr:last-child td {
+	border-bottom: 0;
+}
+
+.cnvapes-my-account-page .ywpar_points_rewards-date {
+	white-space: nowrap;
+	opacity: 0.8;
+	font-size: 0.8rem !important;
+}
+
+.cnvapes-my-account-page .ywpar_points_rewards-action {
+	font-weight: 500;
+}
+
+.cnvapes-my-account-page .ywpar_points_rewards-order a {
+	font-weight: 600;
+	text-decoration: none;
+	color: var(--fs-color-primary, #446084);
+}
+
+.cnvapes-my-account-page .ywpar_points_rewards-points {
+	text-align: right !important;
+	min-width: 0 !important;
+	width: auto !important;
+}
+
+.cnvapes-my-account-page .ywpar_points_rewards-points .ywpar_plus,
+.cnvapes-my-account-page .ywpar_points_rewards-points .ywpar_minus {
+	display: inline-block;
+	min-width: 2.5rem;
+	font-size: 0.95rem !important;
+	font-weight: 700;
+}
+
+.cnvapes-my-account-page .ywpar_points_rewards-points .ywpar_plus {
+	color: #2e7d32 !important;
+}
+
+.cnvapes-my-account-page .ywpar_points_rewards-points .ywpar_minus {
+	color: #c62828 !important;
+}
+
+/* Hide running total text after +/- badge — YITH appends redundant balance */
+.cnvapes-my-account-page .ywpar_points_rewards-points {
+	font-size: 0 !important;
+}
+
+.cnvapes-my-account-page .ywpar_points_rewards-points .ywpar_plus,
+.cnvapes-my-account-page .ywpar_points_rewards-points .ywpar_minus {
+	font-size: 0.95rem !important;
+}
+
+.cnvapes-my-account-page #share_points {
+	background: rgba(0, 0, 0, 0.02) !important;
+	border: 1px solid rgba(0, 0, 0, 0.06);
+	border-radius: 10px;
+	padding: 1.25rem !important;
+}
+
+.cnvapes-my-account-page #ywpar-copy-to-clipboard-wrapper {
+	max-width: 100%;
+	border-radius: 8px;
+}
+
+/* WC forms inside account */
+.cnvapes-my-account-page .woocommerce-MyAccount-content form .form-row {
+	margin-bottom: 0.85rem;
+}
+
+.cnvapes-my-account-page .woocommerce-MyAccount-content .button {
+	border-radius: 8px;
+}
+
+@media (min-width: 550px) {
+	.cnvapes-form-grid--account,
+	.cnvapes-account-form .cnvapes-form-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		column-gap: 0.85rem;
+	}
+
+	.cnvapes-form-grid--account .form-row-wide,
+	.cnvapes-account-form .cnvapes-form-grid .form-row-wide {
+		grid-column: 1 / -1;
+	}
+
+	.cnvapes-form-actions .button {
+		width: auto;
+		min-width: 180px;
+	}
+}
+
+@media (min-width: 700px) {
+	.cnvapes-address-cards,
+	.cnvapes-address-cards--dual {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.cnvapes-my-account-page .ywpar_myaccount_entry_info {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.cnvapes-my-account-page .ywpar_tabs_header ul {
+		flex-wrap: wrap;
+		overflow-x: visible;
+	}
+}
+
+@media (min-width: 850px) {
+	.cnvapes-account-top {
+		margin-bottom: 1.5rem;
+	}
+
+	.cnvapes-account-tabs {
+		flex-wrap: wrap;
+		overflow-x: visible;
+		padding: 0.75rem 1rem 0.85rem;
+	}
+
+	.cnvapes-account-user {
+		padding: 1.15rem 1.25rem 1rem;
+	}
+
+	.cnvapes-dashboard__greeting {
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 849px) {
+	/* ── Mobile base typography & spacing ── */
+	.cnvapes-my-account-page .container {
+		padding-left: 0.85rem;
+		padding-right: 0.85rem;
+	}
+
+	.cnvapes-my-account-page .woocommerce-MyAccount-content {
+		font-size: 0.875rem;
+		line-height: 1.55;
+	}
+
+	.cnvapes-account-panel,
+	.cnvapes-order-panel,
+	.cnvapes-order-detail__header,
+	.cnvapes-order-detail__updates,
+	.cnvapes-dashboard__welcome,
+	.cnvapes-dashboard__refer,
+	.cnvapes-dashboard__orders {
+		padding: 0.9rem !important;
+	}
+
+	.cnvapes-account-panel__title,
+	.cnvapes-order-detail__section-title,
+	.cnvapes-dashboard__section-title,
+	.cnvapes-order-items-table thead th,
+	.woocommerce-order-details__title {
+		font-size: 0.78rem !important;
+		text-transform: none;
+		letter-spacing: 0.02em;
+	}
+
+	.cnvapes-account-panel__desc,
+	.cnvapes-dashboard__refer-desc,
+	.cnvapes-dashboard__meta,
+	.cnvapes-field-hint {
+		font-size: 0.8rem;
+		line-height: 1.5;
+	}
+
+	/* User bar */
+	.cnvapes-account-top {
+		margin-bottom: 0.85rem;
+		margin-left: -0.15rem;
+		margin-right: -0.15rem;
+		border-radius: 10px;
+	}
+
+	.cnvapes-account-nav-horizontal {
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+	}
+
+	.cnvapes-account-user {
+		padding: 0.8rem 0.85rem 0.7rem;
+		gap: 0.65rem;
+	}
+
+	.cnvapes-account-user__avatar img {
+		width: 44px;
+		height: 44px;
+	}
+
+	.cnvapes-account-user__name {
+		font-size: 0.92rem;
+	}
+
+	.cnvapes-account-user__meta {
+		font-size: 0.72rem;
+		gap: 0.3rem;
+	}
+
+	.cnvapes-account-user__logout {
+		padding: 0.14rem 0.45rem;
+		font-size: 0.66rem;
+	}
+
+	.cnvapes-account-user__agent {
+		max-width: min(100%, 9.5rem);
+		padding: 0.32rem 0.5rem 0.32rem 0.4rem;
+		gap: 0.4rem;
+	}
+
+	.cnvapes-account-user__agent-icon {
+		width: 1.45rem;
+		height: 1.45rem;
+	}
+
+	.cnvapes-account-user__agent-icon svg {
+		width: 12px;
+		height: 12px;
+	}
+
+	.cnvapes-account-user__agent-label {
+		font-size: 0.52rem;
+	}
+
+	.cnvapes-account-user__agent-name {
+		font-size: 0.68rem;
+	}
+
+	.cnvapes-account-user__agent-hint {
+		font-size: 0.5rem;
+		padding: 0.08rem 0.3rem;
+	}
+
+	.cnvapes-account-user__actions {
+		gap: 0.35rem;
+	}
+
+	/* Dashboard */
+	.cnvapes-dashboard {
+		gap: 0.65rem;
+	}
+
+	.cnvapes-dashboard__stats {
+		gap: 0.5rem;
+	}
+
+	.cnvapes-dashboard__refer-desc {
+		margin: 0.3rem 0 0.65rem;
+	}
+
+	.cnvapes-dashboard__section-head {
+		margin-bottom: 0.55rem;
+	}
+
+	.cnvapes-dashboard__greeting {
+		font-size: 0.95rem;
+	}
+
+	.cnvapes-stat-card {
+		min-height: 72px;
+		padding: 0.75rem 0.5rem;
+	}
+
+	.cnvapes-stat-card__value {
+		font-size: 1.35rem;
+	}
+
+	.cnvapes-stat-card__label {
+		font-size: 0.65rem;
+	}
+
+	.cnvapes-stat-card__worth {
+		font-size: 0.65rem;
+	}
+
+	.cnvapes-referral-copy__input {
+		font-size: 0.75rem;
+		padding: 0.55rem 0.65rem;
+	}
+
+	.cnvapes-referral-copy__btn {
+		padding: 0.55rem 0.75rem !important;
+		font-size: 0.72rem !important;
+		min-height: 38px;
+	}
+
+	.cnvapes-order-cards--compact .cnvapes-order-card {
+		padding: 0.75rem 0.85rem;
+	}
+
+	.cnvapes-order-cards .cnvapes-order-card__total .awdr-you-saved-text {
+		font-size: 0.65rem;
+		margin-top: 0.15rem;
+	}
+
+	/* Forms & addresses */
+	.cnvapes-form-grid--account label,
+	.cnvapes-account-form .woocommerce-address-fields__field-wrapper label,
+	.cnvapes-address-card__title {
+		font-size: 0.72rem;
+		text-transform: none;
+		letter-spacing: 0.01em;
+	}
+
+	.cnvapes-form-fieldset legend {
+		font-size: 0.82rem;
+		font-weight: 700;
+		opacity: 1;
+	}
+
+	.cnvapes-form-fieldset .cnvapes-form-grid label {
+		font-size: 0.74rem;
+		opacity: 0.82;
+	}
+
+	.cnvapes-form-fieldset .cnvapes-form-grid .input-text,
+	.cnvapes-form-fieldset .cnvapes-form-grid select,
+	.cnvapes-form-fieldset .cnvapes-form-grid textarea {
+		font-size: 0.875rem;
+		padding: 0.55rem 0.65rem;
+	}
+
+	.cnvapes-form-grid .input-text,
+	.cnvapes-form-grid select,
+	.cnvapes-form-grid textarea {
+		font-size: 0.875rem;
+		padding: 0.55rem 0.65rem;
+	}
+
+	.cnvapes-form-fieldset {
+		padding: 0.9rem 0.9rem 0.2rem;
+		margin-top: 1rem;
+	}
+
+	.cnvapes-address-card__head {
+		padding: 0.7rem 0.85rem;
+	}
+
+	.cnvapes-address-card__body {
+		padding: 0.85rem;
+	}
+
+	.cnvapes-address-card__body address {
+		font-size: 0.82rem;
+		line-height: 1.55;
+	}
+
+	.cnvapes-address-card__edit {
+		font-size: 0.62rem;
+		padding: 0.26rem 0.5rem;
+		border-radius: 5px;
+	}
+
+	/* Order detail header */
+	.cnvapes-order-detail__title {
+		font-size: 0.95rem;
+	}
+
+	.cnvapes-order-detail__meta {
+		font-size: 0.78rem;
+	}
+
+	.cnvapes-order-status {
+		font-size: 0.62rem;
+		padding: 0.22rem 0.5rem;
+	}
+
+	.cnvapes-order-items-table tbody td,
+	.cnvapes-order-items-table tfoot th,
+	.cnvapes-order-items-table tfoot td {
+		font-size: 0.82rem;
+		padding: 0.65rem 0.6rem;
+	}
+
+	.cnvapes-order-items-table tfoot.cnvapes-order-totals tr:last-child th,
+	.cnvapes-order-items-table tfoot.cnvapes-order-totals tr:last-child td {
+		font-size: 0.88rem;
+	}
+
+	/* Order detail — actions row on responsive table */
+	.cnvapes-order-items-table.shop_table_responsive tr.cnvapes-order-actions-row {
+		display: block;
+		padding: 0.55rem 0.6rem 0.65rem;
+		border-top: 1px solid rgba(0, 0, 0, 0.06);
+		background: rgba(0, 0, 0, 0.015);
+	}
+
+	.cnvapes-order-items-table.shop_table_responsive tr.cnvapes-order-actions-row th {
+		display: none;
+	}
+
+	.cnvapes-order-items-table.shop_table_responsive tr.cnvapes-order-actions-row td.cnvapes-order-actions-cell {
+		display: flex !important;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: flex-end;
+		gap: 0.7rem;
+		padding: 0 !important;
+		text-align: right !important;
+		border: 0 !important;
+	}
+
+	.cnvapes-order-items-table.shop_table_responsive tr.cnvapes-order-actions-row td::before {
+		display: none !important;
+	}
+
+	/* Compact tabs — fit one row without horizontal scroll */
+	.cnvapes-account-tabs {
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		gap: 0.2rem;
+		padding: 0.4rem 0.35rem;
+		overflow-x: hidden;
+	}
+
+	.cnvapes-account-tabs__item {
+		flex: 1 1 0;
+		min-width: 0;
+	}
+
+	.cnvapes-my-account-page .cnvapes-account-nav-horizontal .cnvapes-account-tabs__link {
+		padding: 0.4rem 0.55rem !important;
+		font-size: 0.78rem;
+		font-weight: 600;
+		letter-spacing: 0;
+		text-transform: none;
+		border-radius: 6px;
+		text-align: center;
+		line-height: 1.25;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	/* Orders list action buttons — left aligned on mobile */
+	.cnvapes-order-card__actions {
+		display: flex !important;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 0.7rem !important;
+	}
+
+	.cnvapes-order-actions-cell {
+		display: flex !important;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: flex-end;
+		gap: 0.7rem !important;
+	}
+
+	.cnvapes-order-card__actions {
+		padding-top: 0.55rem;
+	}
+
+	.cnvapes-order-card__actions .button,
+	.cnvapes-order-actions-cell .button,
+	.cnvapes-order-actions-cell .woocommerce-button {
+		flex: 0 0 auto;
+		width: auto;
+		min-width: 0;
+		min-height: 0;
+		margin: 0 !important;
+		font-size: 0.72rem !important;
+		font-weight: 600;
+		padding: 0.38rem 0.72rem !important;
+		line-height: 1.3;
+		border-radius: 6px;
+		letter-spacing: 0.01em;
+		text-transform: none;
+		box-shadow: none;
+	}
+
+	/* Compact buttons — pagination, forms, etc. */
+	.cnvapes-orders-pagination .button,
+	.cnvapes-orders-empty .button,
+	.cnvapes-form-actions .button,
+	.cnvapes-my-account-page #share_points .button,
+	.cnvapes-my-account-page #share_points input[type="submit"] {
+		flex: 0 0 auto;
+		width: auto;
+		min-width: 0;
+		min-height: 0;
+		font-size: 0.62rem !important;
+		font-weight: 600;
+		padding: 0.28rem 0.55rem !important;
+		line-height: 1.25;
+		border-radius: 5px;
+		letter-spacing: 0.01em;
+		text-transform: none;
+		box-shadow: none;
+	}
+
+	.cnvapes-form-actions .button {
+		width: 100%;
+		padding: 0.5rem 0.85rem !important;
+		font-size: 0.72rem !important;
+	}
+
+	.cnvapes-order-card__actions .button.view {
+		background: transparent !important;
+		color: var(--fs-color-primary, #446084) !important;
+		border: 1px solid rgba(var(--fs-color-primary-rgb, 68, 96, 132), 0.35) !important;
+	}
+
+	.cnvapes-order-actions-cell .button.view,
+	.cnvapes-order-actions-cell .woocommerce-button.view {
+		background: transparent !important;
+		color: var(--fs-color-primary, #446084) !important;
+		border: 1px solid rgba(var(--fs-color-primary-rgb, 68, 96, 132), 0.35) !important;
+	}
+
+	.cnvapes-order-card__actions .button.pay,
+	.cnvapes-order-card__actions .button.order-again {
+		padding: 0.38rem 0.78rem !important;
+	}
+
+	.cnvapes-order-actions-cell .button.pay,
+	.cnvapes-order-actions-cell .woocommerce-button.pay,
+	.cnvapes-order-actions-cell .button.cancel,
+	.cnvapes-order-actions-cell .woocommerce-button.cancel {
+		padding: 0.38rem 0.78rem !important;
+	}
+
+	/* YITH Points — compact stats & tabs */
+	.cnvapes-my-account-page .ywpar_myaccount_entry_info > div {
+		padding: 0.7rem 0.5rem !important;
+	}
+
+	.cnvapes-my-account-page .points_collected,
+	.cnvapes-my-account-page .ywpar_myaccount_entry_info .rank {
+		font-size: 1.35rem !important;
+	}
+
+	.cnvapes-my-account-page .ywpar_entry_info_title {
+		font-size: 0.62rem !important;
+		text-transform: none;
+	}
+
+	.cnvapes-my-account-page .ywpar_tabs_header ul[role="tablist"] {
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		gap: 0.2rem;
+		padding: 0.4rem 0.35rem;
+		overflow-x: hidden;
+	}
+
+	.cnvapes-my-account-page .ywpar_tabs_links {
+		flex: 1 1 0;
+		min-width: 0;
+		padding: 0.38rem 0.1rem !important;
+		font-size: clamp(0.54rem, 2.4vw, 0.65rem) !important;
+		text-transform: none;
+		letter-spacing: 0;
+		text-align: center;
+		line-height: 1.25;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.cnvapes-my-account-page .ywpar_tabcontent {
+		padding: 0.85rem;
+	}
+
+	.cnvapes-my-account-page .ywpar_points_rewards.shop_table_responsive tbody td::before,
+	.cnvapes-my-account-page .ywpar_tabcontent .shop_table.shop_table_responsive:not(.ywpar_points_rewards) tbody td::before {
+		font-size: 0.62rem;
+		text-transform: none;
+	}
+
+	/* Points history — card rows on mobile */
+	.cnvapes-my-account-page .ywpar_points_rewards.shop_table_responsive thead {
+		display: none;
+	}
+
+	.cnvapes-my-account-page .ywpar_points_rewards.shop_table_responsive tbody tr.ywpar-item {
+		display: block;
+		margin-bottom: 0.65rem;
+		padding: 0.85rem 1rem;
+		border: 1px solid rgba(0, 0, 0, 0.07);
+		border-radius: 10px;
+		background: #fff;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+	}
+
+	.cnvapes-my-account-page .ywpar_points_rewards.shop_table_responsive tbody tr.ywpar-item:hover {
+		background: #fff;
+	}
+
+	.cnvapes-my-account-page .ywpar_points_rewards.shop_table_responsive tbody td {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: 0.75rem;
+		padding: 0.4rem 0 !important;
+		border: 0 !important;
+		text-align: right !important;
+	}
+
+	.cnvapes-my-account-page .ywpar_points_rewards.shop_table_responsive tbody td::before {
+		content: attr(data-title) ":";
+		flex-shrink: 0;
+		font-size: 0.68rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.03em;
+		opacity: 0.6;
+		text-align: left;
+		color: inherit;
+	}
+
+	.cnvapes-my-account-page .ywpar_points_rewards.shop_table_responsive tbody td.ywpar_points_rewards-points::before {
+		color: inherit;
+		font-size: 0.68rem;
+	}
+
+	.cnvapes-my-account-page .ywpar_tabcontent .shop_table.shop_table_responsive:not(.ywpar_points_rewards) thead {
+		display: none;
+	}
+
+	.cnvapes-my-account-page .ywpar_tabcontent .shop_table.shop_table_responsive:not(.ywpar_points_rewards) tbody tr {
+		display: block;
+		margin-bottom: 0.65rem;
+		padding: 0.85rem 1rem;
+		border: 1px solid rgba(0, 0, 0, 0.07);
+		border-radius: 10px;
+		background: #fff;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+	}
+
+	.cnvapes-my-account-page .ywpar_tabcontent .shop_table.shop_table_responsive:not(.ywpar_points_rewards) tbody td {
+		display: flex;
+		justify-content: space-between;
+		gap: 0.75rem;
+		padding: 0.4rem 0 !important;
+		border: 0 !important;
+		text-align: right !important;
+	}
+
+	.cnvapes-my-account-page .ywpar_tabcontent .shop_table.shop_table_responsive:not(.ywpar_points_rewards) tbody td::before {
+		content: attr(data-title) ":";
+		font-size: 0.68rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.03em;
+		opacity: 0.6;
+		text-align: left;
+		color: inherit;
+	}
+
+	.cnvapes-order-items-table.shop_table_responsive thead {
+		display: none;
+	}
+
+	.cnvapes-order-items-table.shop_table_responsive tbody tr.order_item {
+		display: block;
+		padding: 0.75rem 0.6rem;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+	}
+
+	.cnvapes-order-items-table.shop_table_responsive tbody tr td {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: 0.65rem;
+		padding: 0.3rem 0 !important;
+		text-align: right !important;
+		border: 0 !important;
+	}
+
+	.cnvapes-order-items-table.shop_table_responsive tbody tr td::before {
+		font-size: 0.62rem;
+		font-weight: 600;
+		text-transform: none;
+		letter-spacing: 0.01em;
+		opacity: 0.55;
+		text-align: left;
+	}
+
+	.cnvapes-order-items-table.shop_table_responsive tfoot.cnvapes-order-totals tr {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0.35rem 0.6rem;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+	}
+
+	.cnvapes-order-items-table.shop_table_responsive tfoot.cnvapes-order-totals tr th,
+	.cnvapes-order-items-table.shop_table_responsive tfoot.cnvapes-order-totals tr td {
+		display: block;
+		padding: 0 !important;
+		border: 0 !important;
+		background: transparent;
+	}
+
+	.cnvapes-order-items-table.shop_table_responsive tfoot.cnvapes-order-totals tr th::before,
+	.cnvapes-order-items-table.shop_table_responsive tfoot.cnvapes-order-totals tr td::before {
+		display: none;
+	}
+
+	.cnvapes-order-items-table.shop_table_responsive tfoot.cnvapes-order-totals tr:last-child {
+		border-top: 2px solid rgba(0, 0, 0, 0.08);
+		padding-top: 0.55rem;
+		margin-top: 0.25rem;
+		font-weight: 700;
+	}
+}
+
+/* Track order page */
+.cnvapes-track-order,
+.cnvapes-track-order-result {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.cnvapes-track-order-form {
+	margin: 0;
+}
+
+.cnvapes-track-order-form .cnvapes-form-actions {
+	margin-top: 0.25rem;
+}
+
+.cnvapes-track-order-form .cnvapes-form-actions .button {
+	width: 100%;
+	margin: 0;
+	border-radius: 8px;
+	text-transform: none;
+	letter-spacing: 0;
+}
+
+.cnvapes-my-account-page .cnvapes-account-content .woocommerce-notices-wrapper {
+	margin-bottom: 0.75rem;
+}
+
+.cnvapes-my-account-page .cnvapes-account-content .woocommerce-error,
+.cnvapes-my-account-page .cnvapes-account-content .woocommerce-info,
+.cnvapes-my-account-page .cnvapes-account-content .woocommerce-message,
+.cnvapes-track-order-page .woocommerce-error,
+.cnvapes-track-order-page .woocommerce-info,
+.cnvapes-track-order-page .woocommerce-message {
+	margin: 0 0 0.75rem;
+	padding: 0.75rem 0.85rem;
+	font-size: 0.8125rem;
+	line-height: 1.45;
+	border-radius: 10px;
+}
+
+.cnvapes-track-order-page:not(.logged-in) .cnvapes-track-order {
+	max-width: 520px;
+	margin: 0 auto;
+}
+
+@media (min-width: 550px) {
+	.cnvapes-track-order-form .cnvapes-form-actions .button {
+		width: auto;
+		min-width: 160px;
+	}
+}
+
+@media (max-width: 849px) {
+	.cnvapes-track-order-page.logged-in .cnvapes-track-order .cnvapes-account-panel,
+	.cnvapes-track-order-page.logged-in .cnvapes-track-order-result .box.box-plain {
+		padding: 0.9rem !important;
+	}
+
+	.cnvapes-track-order-form .cnvapes-form-grid .input-text {
+		font-size: 16px;
+	}
+
+	.cnvapes-track-order-form .cnvapes-form-actions .button {
+		min-height: 42px;
+		font-size: 0.875rem;
+		padding: 0.55rem 0.85rem;
+	}
+}

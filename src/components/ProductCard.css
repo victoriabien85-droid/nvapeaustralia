@@ -1,0 +1,134 @@
+.product-card {
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-accent);
+  box-shadow: var(--shadow-glow);
+}
+
+.product-image-container {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 1rem;
+  display: block;
+  text-decoration: none;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+.product-badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  background-color: var(--primary-accent);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-full);
+  z-index: 2;
+}
+
+.product-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(13, 13, 13, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-overlay {
+  opacity: 1;
+}
+
+.quick-view-hint {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: var(--radius-full);
+  transform: translateY(16px);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.product-card:hover .quick-view-hint {
+  transform: translateY(0);
+}
+
+.product-info {
+  padding: 1.25rem 1.5rem 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.product-category {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.product-name {
+  font-size: 1rem;
+  flex-grow: 1;
+  color: white;
+  transition: color 0.2s ease;
+  line-height: 1.4;
+}
+
+.product-name:hover {
+  color: var(--primary-accent);
+}
+
+.product-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.product-price {
+  font-weight: 700;
+  color: var(--primary-accent);
+  font-size: 1.15rem;
+}
+
+.add-to-cart-btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+}
