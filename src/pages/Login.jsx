@@ -107,7 +107,7 @@ const Login = () => {
                       <td style={{ padding: '1rem 0.5rem', fontSize: '0.85rem', color: '#ccc' }}>
                         IGET Bar Plus – Blue Razz Lemonade (x5)
                       </td>
-                      <td style={{ padding: '1rem 0.5rem', fontSize: '0.85rem', fontWeight: 600, color: 'white' }}>$174.75 AUD</td>
+                      <td style={{ padding: '1rem 0.5rem', fontSize: '0.85rem', fontWeight: 600, color: 'white' }}>$274.75 AUD</td>
                       <td style={{ padding: '1rem 0.5rem', fontSize: '0.8rem' }}>
                         <span style={{ color: 'white', backgroundColor: '#3b82f6', padding: '0.2rem 0.5rem', borderRadius: '4px', fontWeight: 600, fontSize: '0.7rem' }}>In Transit</span>
                       </td>
@@ -129,7 +129,7 @@ const Login = () => {
                         Vozol – Cool Mint (x2)<br/>
                         Alibarbar – Mango Ice (x3)
                       </td>
-                      <td style={{ padding: '1rem 0.5rem', fontSize: '0.85rem', fontWeight: 600, color: 'white' }}>$139.75 AUD</td>
+                      <td style={{ padding: '1rem 0.5rem', fontSize: '0.85rem', fontWeight: 600, color: 'white' }}>$246.90 AUD</td>
                       <td style={{ padding: '1rem 0.5rem', fontSize: '0.8rem' }}>
                         <span style={{ color: 'white', backgroundColor: '#10b981', padding: '0.2rem 0.5rem', borderRadius: '4px', fontWeight: 600, fontSize: '0.7rem' }}>Delivered</span>
                       </td>
