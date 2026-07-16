@@ -1,0 +1,103 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background-color: #1c1c1c;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.login-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.login-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.form-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.input-with-icon {
+  position: relative;
+  width: 100%;
+}
+
+.input-icon-left {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777777;
+  pointer-events: none;
+}
+
+.input-indented {
+  padding-left: 38px !important;
+  background-color: #121212 !important;
+  border: 1px solid #333333 !important;
+  color: #ffffff !important;
+}
+
+.input-indented:focus {
+  border-color: var(--primary-accent) !important;
+}
+
+.login-btn {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.login-footer {
+  margin-top: 1.5rem;
+  border-top: 1px solid #2d2d2d;
+  padding-top: 1rem;
+}
+
+/* Dashboard orders table styling */
+.orders-table th {
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid #333333;
+}
+
+.orders-table td {
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid #222222;
+  color: #e0e0e0;
+}
+
+.stat-card {
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary-accent) !important;
+}

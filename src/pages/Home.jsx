@@ -17,15 +17,12 @@ const Home = () => {
       <Hero />
 
       {/* Featured Products */}
-      <section className="featured-section" style={{ padding: '5rem 0' }}>
+      <section className="featured-section" style={{ padding: '3rem 0' }}>
         <div className="container">
-          <div className="flex justify-between items-end" style={{ marginBottom: '2.5rem' }}>
-            <div>
-              <p className="text-sm text-accent font-bold" style={{ textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.5rem' }}>🔥 Most Popular</p>
-              <h2 className="text-3xl font-display" style={{ lineHeight: 1.2 }}>Best Selling Products</h2>
-              <p className="text-muted" style={{ marginTop: '0.5rem' }}>Real products, real prices — direct from our store.</p>
-            </div>
-            <Link to="/shop" className="btn btn-outline hide-mobile">View All</Link>
+          <div className="flex-col items-center justify-center text-center" style={{ marginBottom: '2rem' }}>
+            <h2 style={{ fontSize: '1.25rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em', borderBottom: '2px solid var(--border-color)', paddingBottom: '0.5rem', display: 'inline-block' }}>
+              Best Selling Products
+            </h2>
           </div>
           
           <div className="products-grid">
@@ -41,28 +38,28 @@ const Home = () => {
       </section>
 
       {/* Delivery Promise Banner */}
-      <section style={{ backgroundColor: 'var(--bg-secondary)', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)', padding: '3rem 0' }}>
+      <section style={{ backgroundColor: 'var(--bg-secondary)', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)', padding: '2rem 0', marginTop: '2rem' }}>
         <div className="container">
-          <div className="features-grid">
-            <div className="feature-card">
-              <Truck size={36} style={{ color: 'var(--primary-accent)', marginBottom: '1rem' }} />
-              <h3 className="font-bold text-lg" style={{ marginBottom: '0.5rem' }}>Free Shipping</h3>
-              <p className="text-muted text-sm">Free shipping on 5+ units. The more you buy, the lower your cost.</p>
+          <div className="features-grid" style={{ gap: '1rem' }}>
+            <div className="feature-card text-center items-center">
+              <Truck size={28} style={{ color: 'var(--text-primary)', marginBottom: '0.5rem' }} />
+              <h3 style={{ fontSize: '0.9rem', fontWeight: 600, textTransform: 'uppercase', marginBottom: '0.25rem' }}>Free Shipping</h3>
+              <p className="text-muted" style={{ fontSize: '0.8rem' }}>Free shipping on 5+ units.</p>
             </div>
-            <div className="feature-card">
-              <ShieldCheck size={36} style={{ color: 'var(--primary-accent)', marginBottom: '1rem' }} />
-              <h3 className="font-bold text-lg" style={{ marginBottom: '0.5rem' }}>100% Delivery Protection</h3>
-              <p className="text-muted text-sm">Every order is covered. If not delivered for any reason, we provide a full refund.</p>
+            <div className="feature-card text-center items-center">
+              <ShieldCheck size={28} style={{ color: 'var(--text-primary)', marginBottom: '0.5rem' }} />
+              <h3 style={{ fontSize: '0.9rem', fontWeight: 600, textTransform: 'uppercase', marginBottom: '0.25rem' }}>100% Protection</h3>
+              <p className="text-muted" style={{ fontSize: '0.8rem' }}>Full refund if not delivered.</p>
             </div>
-            <div className="feature-card">
-              <Package size={36} style={{ color: 'var(--primary-accent)', marginBottom: '1rem' }} />
-              <h3 className="font-bold text-lg" style={{ marginBottom: '0.5rem' }}>Authentic Products</h3>
-              <p className="text-muted text-sm">100% genuine products sourced directly from the Cnvapes supply chain.</p>
+            <div className="feature-card text-center items-center">
+              <Package size={28} style={{ color: 'var(--text-primary)', marginBottom: '0.5rem' }} />
+              <h3 style={{ fontSize: '0.9rem', fontWeight: 600, textTransform: 'uppercase', marginBottom: '0.25rem' }}>Authentic Products</h3>
+              <p className="text-muted" style={{ fontSize: '0.8rem' }}>100% genuine sourced.</p>
             </div>
-            <div className="feature-card">
-              <Clock size={36} style={{ color: 'var(--primary-accent)', marginBottom: '1rem' }} />
-              <h3 className="font-bold text-lg" style={{ marginBottom: '0.5rem' }}>24hr Processing</h3>
-              <p className="text-muted text-sm">Orders processed within 24 hours. Real-time tracking available on your account.</p>
+            <div className="feature-card text-center items-center">
+              <Clock size={28} style={{ color: 'var(--text-primary)', marginBottom: '0.5rem' }} />
+              <h3 style={{ fontSize: '0.9rem', fontWeight: 600, textTransform: 'uppercase', marginBottom: '0.25rem' }}>24hr Processing</h3>
+              <p className="text-muted" style={{ fontSize: '0.8rem' }}>Fast dispatch & tracking.</p>
             </div>
           </div>
         </div>

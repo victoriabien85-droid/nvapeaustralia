@@ -28,6 +28,8 @@ const Footer = () => {
             <h3 className="font-display text-lg mb-4">Help</h3>
             <ul>
               <li><Link to="/shopping-guide">Shopping Guide</Link></li>
+              <li><Link to="/track-order">Track Order</Link></li>
+              <li><Link to="/login">My Account</Link></li>
               <li><Link to="/checkout">Checkout</Link></li>
             </ul>
           </div>
