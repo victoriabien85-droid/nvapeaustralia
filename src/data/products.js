@@ -6,7 +6,7 @@ export const products = [
     originalPrice: null,
     category: "IGET",
     brand: "IGET",
-    puffs: "6000 Puffs",
+    puffs: "10,000 to 12,000 Puffs",
     image: "/assets/Blue-Razz-Lemonade-247x296.jpg",
     description: "A tangy-sweet fusion of blue raspberry and lemonade. One of our bestsellers.",
     badge: "Best Seller"
@@ -18,7 +18,7 @@ export const products = [
     originalPrice: null,
     category: "IGET",
     brand: "IGET",
-    puffs: "6000 Puffs",
+    puffs: "10,000 to 12,000 Puffs",
     image: "/assets/Cola-Ice-247x296.jpg",
     description: "Classic cola flavour with a cool refreshing icy finish. Fan favourite.",
     badge: "Hot"
@@ -30,7 +30,7 @@ export const products = [
     originalPrice: null,
     category: "IGET",
     brand: "IGET",
-    puffs: "6000 Puffs",
+    puffs: "10,000 to 12,000 Puffs",
     image: "/assets/Hubba-247x296.jpg",
     description: "Nostalgic sweet bubblegum flavour. Smooth and satisfying every time.",
     badge: null
@@ -42,7 +42,7 @@ export const products = [
     originalPrice: null,
     category: "IGET",
     brand: "IGET",
-    puffs: "6000 Puffs",
+    puffs: "10,000 to 12,000 Puffs",
     image: "/assets/Blueberry-Raspberry-Ice-247x296.jpg",
     description: "Sweet blueberry and tart raspberry with an icy menthol kick.",
     badge: "New"
@@ -54,7 +54,7 @@ export const products = [
     originalPrice: null,
     category: "Geek Bar",
     brand: "GEEK BAR",
-    puffs: "5000 Puffs",
+    puffs: "10,000 to 12,000 Puffs",
     image: "/assets/Blackberry-Ice-280x280.jpg",
     description: "Bold blackberry flavour chilled to perfection. Rich, dark, and icy.",
     badge: null
@@ -66,7 +66,7 @@ export const products = [
     originalPrice: null,
     category: "Fumot",
     brand: "Fumot",
-    puffs: "7000 Puffs",
+    puffs: "10,000 to 12,000 Puffs",
     image: "/assets/Grape-Ice-280x280.jpg",
     description: "Juicy concord grape flavour with a smooth icy finish.",
     badge: null
@@ -78,7 +78,7 @@ export const products = [
     originalPrice: null,
     category: "Vozol",
     brand: "VOZOL",
-    puffs: "5000 Puffs",
+    puffs: "10,000 to 12,000 Puffs",
     image: "/assets/Cool-Mint-280x280.jpg",
     description: "Pure, clean, and refreshing spearmint. The classic choice.",
     badge: null
@@ -90,7 +90,7 @@ export const products = [
     originalPrice: null,
     category: "Alibarbar",
     brand: "Alibarbar",
-    puffs: "5000 Puffs",
+    puffs: "10,000 to 12,000 Puffs",
     image: "/assets/Mango-Ice-280x280.jpg",
     description: "Tropical ripe mango with a light icy undertone. Summer in a stick.",
     badge: "Top Rated"
@@ -102,7 +102,7 @@ export const products = [
     originalPrice: null,
     category: "Elf Bar",
     brand: "Elf Bar",
-    puffs: "5000 Puffs",
+    puffs: "10,000 to 12,000 Puffs",
     image: "/assets/Strawberry-Watermelon-280x280.jpg",
     description: "Sweet strawberry meets juicy watermelon. Fruity and light.",
     badge: null
@@ -114,7 +114,7 @@ export const products = [
     originalPrice: null,
     category: "WALA",
     brand: "WALA",
-    puffs: "6000 Puffs",
+    puffs: "10,000 to 12,000 Puffs",
     image: "/assets/Peach-Ice-1-280x280.jpg",
     description: "Ripe, juicy peach chilled with icy menthol. Perfectly balanced.",
     badge: null
@@ -126,7 +126,7 @@ export const products = [
     originalPrice: null,
     category: "NEXA",
     brand: "NEXA",
-    puffs: "8000 Puffs",
+    puffs: "10,000 to 12,000 Puffs",
     image: "/assets/Blueberry-Blast-280x280.jpg",
     description: "An explosive burst of blueberry flavour that lasts all day.",
     badge: "New"
@@ -138,7 +138,7 @@ export const products = [
     originalPrice: null,
     category: "JNR",
     brand: "JNR",
-    puffs: "5000 Puffs",
+    puffs: "10,000 to 12,000 Puffs",
     image: "/assets/Raspberry_Grape-280x280.jpg",
     description: "A beautiful blend of sharp raspberry and sweet grape.",
     badge: null
@@ -150,7 +150,7 @@ export const products = [
     originalPrice: null,
     category: "SMOK",
     brand: "SMOK",
-    puffs: "6000 Puffs",
+    puffs: "10,000 to 12,000 Puffs",
     image: "/assets/Kiwi-Pineapple-280x280.jpg",
     description: "Tangy kiwi meets tropical pineapple. Vibrant and refreshing.",
     badge: null
@@ -162,7 +162,7 @@ export const products = [
     originalPrice: null,
     category: "BANG",
     brand: "Bang",
-    puffs: "5000 Puffs",
+    puffs: "10,000 to 12,000 Puffs",
     image: "/assets/Cherry_Pomegranate-280x280.jpg",
     description: "Deep cherry and rich pomegranate in every draw. Bold and intense.",
     badge: null

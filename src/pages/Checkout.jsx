@@ -9,7 +9,7 @@ import {
 import './Checkout.css';
 
 /* ─── Config ─────────────────────────────────────────────────── */
-const WHATSAPP_NUMBER = '61480899936'; // Australian number without +
+const WHATSAPP_NUMBER = '61410736059'; // Australian number without +
 
 const BANK_DETAILS = {
   accountName: 'CnvapesAustralia Pty Ltd',
@@ -105,7 +105,7 @@ const CardConfirmation = ({ grandTotal, onDone }) => (
       <div className="next-step"><Truck size={20} style={{ color: '#60a5fa' }} /> Tracking info sent within 24 hrs</div>
       <div className="next-step"><ShieldCheck size={20} style={{ color: 'var(--success)' }} /> 100% Delivery Protection guaranteed</div>
     </div>
-    <div className="conf-contact">📞 Questions? Call us: <strong>+61 480 899 936</strong></div>
+    <div className="conf-contact">📞 Questions? Call us: <strong>+61 410 736 059</strong></div>
     <button className="btn btn-primary conf-done-btn" onClick={onDone}>Continue Shopping</button>
   </div>
 );
