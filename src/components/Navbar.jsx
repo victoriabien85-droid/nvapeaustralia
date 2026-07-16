@@ -92,18 +92,13 @@ const Navbar = () => {
       {/* Bottom Header Row - Red Background */}
       <nav className="navbar-bottom-row">
         <div className="container flex justify-between items-center navbar-content">
-          <div className="flex items-center">
-            {/* Mobile Menu Button toggles bottom row nav links */}
-            <button className="mobile-menu-btn" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-              {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
-            </button>
-            
-            <ul className={`nav-links flex items-center gap-6 ${isMenuOpen ? 'open' : ''}`}>
+          <div className="nav-links-wrapper">
+            <ul className="nav-links flex items-center gap-6">
               <li>
-                <Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/shop?badge=Hot" onClick={() => setIsMenuOpen(false)}>Hot Sales</Link>
+                <Link to="/shop?badge=Hot">Hot Sales</Link>
               </li>
               <li 
                 className="brands-dropdown-container"
@@ -121,10 +116,7 @@ const Navbar = () => {
                     <li key={brand}>
                       <Link 
                         to={`/shop?brand=${encodeURIComponent(brand)}`}
-                        onClick={() => {
-                          setIsBrandsOpen(false);
-                          setIsMenuOpen(false);
-                        }}
+                        onClick={() => setIsBrandsOpen(false)}
                       >
                         {brand}
                       </Link>
@@ -133,21 +125,21 @@ const Navbar = () => {
                 </ul>
               </li>
               <li>
-                <Link to="/shopping-guide" onClick={() => setIsMenuOpen(false)}>Shipping & FAQ</Link>
+                <Link to="/shopping-guide">Shipping & FAQ</Link>
               </li>
               <li>
-                <Link to="/track-order" onClick={() => setIsMenuOpen(false)}>Track Order</Link>
+                <Link to="/track-order">Track Order</Link>
               </li>
               <li>
-                <Link to={isLoggedIn ? "/my-account" : "/login"} onClick={() => setIsMenuOpen(false)}>My account</Link>
+                <Link to={isLoggedIn ? "/my-account" : "/login"}>My account</Link>
               </li>
             </ul>
           </div>
 
-          <div className="flex items-center">
+          <div className="flex items-center flex-shrink-0">
             <button className="cart-total-btn flex items-center gap-2" onClick={toggleCart}>
               <ShoppingCart size={18} />
-              <span className="cart-text hide-mobile">Cart /</span>
+              <span className="cart-text">Cart /</span>
               <span className="cart-amount">AUD ${cartTotal.toFixed(2)}</span>
               {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
             </button>

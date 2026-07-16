@@ -227,24 +227,20 @@
   margin-left: 4px;
 }
 
+.nav-links-wrapper {
+  overflow: visible;
+  flex-grow: 1;
+}
+
 .mobile-menu-btn {
   display: none;
-  color: #ffffff;
-  background: none;
-  border: none;
-  cursor: pointer;
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
-  .mobile-menu-btn {
-    display: block;
-    margin-right: 1rem;
-  }
-
   .header-login-col,
   .header-search-col {
-    display: none; /* Hide on mobile to simplify header, search goes inside mobile menu if needed, or we keep it clean */
+    display: none; /* Hide on mobile to simplify header */
   }
 
   .header-logo-col {
@@ -255,52 +251,54 @@
     max-height: 38px;
   }
 
-  .nav-links {
-    position: absolute;
-    top: 45px;
-    left: 0;
-    width: 100%;
-    background-color: #1a1a1a;
-    flex-direction: column;
-    padding: 1rem 0;
-    gap: 0 !important;
-    border-bottom: 2px solid var(--primary-accent);
-    display: none;
+  /* Make bottom row links scrollable horizontally on mobile */
+  .nav-links-wrapper {
+    overflow-x: auto;
+    overflow-y: visible;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+    margin-right: 0.5rem;
   }
 
-  .nav-links.open {
+  .nav-links-wrapper::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+
+  .nav-links {
     display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 1.25rem !important;
+    white-space: nowrap;
   }
 
   .nav-links li {
-    width: 100%;
+    width: auto !important;
   }
 
   .nav-links li a,
   .brands-dropdown-trigger {
-    padding: 0.75rem 1.5rem;
-    color: #ffffff;
-    border-bottom: 1px solid #2a2a2a;
-    width: 100%;
-    text-align: left;
+    padding: 0.5rem 0.25rem !important;
+    border-bottom: none !important;
+    width: auto !important;
   }
 
+  /* Fixed positioning to avoid overflow clipping on mobile scroll */
   .brands-dropdown {
-    position: static;
-    width: 100%;
-    background-color: #222222;
-    border: none;
-    box-shadow: none;
-    padding-left: 1.5rem;
-    display: none;
-  }
-
-  .brands-dropdown.show {
-    display: block;
+    position: fixed !important;
+    top: 110px !important;
+    left: 15px !important;
+    right: 15px !important;
+    width: auto !important;
+    min-width: unset !important;
+    background-color: #1a1a1a !important;
+    border: 1px solid #2d2d2d !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3) !important;
+    z-index: 10000 !important;
   }
 
   .brands-dropdown li a {
-    border-bottom: 1px solid #333333;
+    border-bottom: 1px solid #222222 !important;
   }
 }
 
