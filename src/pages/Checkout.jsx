@@ -9,7 +9,7 @@ import {
 import './Checkout.css';
 
 /* ─── Config ─────────────────────────────────────────────────── */
-const WHATSAPP_NUMBER = '61410736059'; // Australian number without +
+const WHATSAPP_NUMBER = '61468134439'; // Australian number without +
 
 const BANK_DETAILS = {
   accountName: 'CnvapesAustralia Pty Ltd',

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { ArrowUp, X, SendHorizontal, MessageSquare } from 'lucide-react';
 import './FloatingWidgets.css';
 
-const WHATSAPP_NUMBER = '61410736059';
+const WHATSAPP_NUMBER = '61468134439';
 const TELEGRAM_LINK = 'https://t.me/cnvapesaustralia';
 
 const FloatingWidgets = () => {
