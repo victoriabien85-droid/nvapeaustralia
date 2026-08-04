@@ -82,7 +82,7 @@ const ShoppingGuide = () => (
       <span style={{ fontSize: '2rem' }}>📞</span>
       <div>
         <p className="font-bold">Need Help? Contact Us</p>
-        <p className="text-muted text-sm">Telephone: +61468134439</p>
+        <p className="text-muted text-sm">Telephone: +61468134199</p>
       </div>
     </div>
   </div>
